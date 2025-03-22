@@ -17,6 +17,12 @@ steps:
   inputs:
     version: '$(dotnetSdkVersion)'
 
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:

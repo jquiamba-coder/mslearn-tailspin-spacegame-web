@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ProjectGuid>{A0C4E31E-AC75-4F39-9F59-0AA19D9B8F46}</ProjectGuid>
+    <StartupObject>TailSpin.SpaceGame.Web.Program</StartupObject>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Folder Include="wwwroot\images\avatars\" />
   </ItemGroup>

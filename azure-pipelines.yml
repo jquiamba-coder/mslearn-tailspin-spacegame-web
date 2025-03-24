@@ -36,6 +36,12 @@ steps:
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
 - task: NuGetCommand@2
   displayName: 'Restore project dependencies'
   inputs:
